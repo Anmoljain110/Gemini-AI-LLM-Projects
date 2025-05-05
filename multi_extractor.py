@@ -1,3 +1,4 @@
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -8,6 +9,7 @@ from PIL import Image
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+# Using  Supportive model
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(input, image, prompt):
